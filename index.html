@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Starts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bdy">
+    <div class="btn">
+        <button onclick="counter()">Click Here!!!</button>
+    </div>
+
+    <script>     
+        function counter()
+        {
+            var d= document.querySelector('.btn');
+            var count=10;            
+            setTimeout(function() {
+                d.style.color='#007ACC';
+                d.style.fontSize='50px';
+                d.innerHTML=count;
+                count--;
+                setTimeout(function() {
+                    d.style.color='#B3D4E4';
+                    d.innerHTML=count;
+                    count--;
+                    setTimeout(function() {
+                        d.style.color='#007ACC';
+                        d.innerHTML=count;
+                        count--;  
+                        console.log(count);
+                        setTimeout(function(){
+                            d.style.color='#B3D4E4';
+                            d.innerHTML=count;
+                            count--;
+                            setTimeout(function(){
+                                d.style.color='#007ACC';
+                                d.innerHTML=count;
+                                count--;
+                                setTimeout(function(){
+                                    d.style.color='#B3D4E4';
+                                    d.innerHTML=count;
+                                    count--;
+                                    setTimeout(function(){
+                                        d.style.color='#007ACC';
+                                        d.innerHTML=count;
+                                        count--;
+                                            setTimeout(function(){
+                                                d.style.color='#B3D4E4';
+                                            d.innerHTML=count;
+                                            count--;
+                                                setTimeout(function(){
+                                                d.style.color='#007ACC';
+                                                d.innerHTML=count;
+                                                count--;
+                                                    setTimeout(function(){
+                                                    d.style.color='#B3D4E4';
+                                                    d.innerHTML=count;
+                                                    count--;
+                                                        setTimeout(function(){
+                                                            var bod = document.getElementById("bdy");
+                                                            d.innerHTML='';
+                                                            bod.style.backgroundImage="url('./img/2.jpg')";
+                                                            bod.style.backgroundRepeat='no-repeat';
+                                                            bod.style.backgroundPosition='center';
+                                                            bod.style.backgroundSize='100% 200%';
+                                                            bod.style.backgroundPosition="0px 0px";
+                                                        },1000);
+                                                    },1000);
+                                                },1000); 
+                                            },1000);
+                                    },1000);
+                                },1000)
+                            },1000);
+                        },1000);
+                    },1000);
+                },1000);
+            },1000);
+        }
+    </script>
+</body>
+</html>
